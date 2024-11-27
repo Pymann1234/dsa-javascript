@@ -60,15 +60,15 @@ console.log(myArray);
 
 
 
-//                                     Stand in Line
-// In Computer Science a queue is an abstract Data Structure where items are kept in order. 
-// New items can be added at the back of the queue and old items are taken off from the front of the queue.
+/*                                     Stand in Line
+ In Computer Science a queue is an abstract Data Structure where items are kept in order. 
+ New items can be added at the back of the queue and old items are taken off from the front of the queue.
 
-/* Q. Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
+Q. Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
 Add the number to the end of the array, then remove the first element of the array.
 The nextInLine function should then return the element that was removed. */
 
-function nextInLine(arr, item) {
+var nextInLine = (arr, item) => {
   arr.push(item);
   arr.shift();
 };
@@ -93,7 +93,7 @@ Instead, you can add the default statement which will be executed if no matching
 Think of it like the final else statement in an if/else chain.
 */
 
-function switchOfStuff(val) {
+var switchOfStuff = (val) => {
   let answer = "";
   // Only change code below this line
   switch (val) {
@@ -123,7 +123,7 @@ function switchOfStuff(val) {
 console.log(switchOfStuff("e"));
 
 // Setup
-function abTest(a, b) {
+var abTest = (a, b) => {
   // Only change code below this line
   if (a < 0 || b < 0) {
     return undefined;
@@ -132,7 +132,7 @@ function abTest(a, b) {
   // Only change code above this line
 
   return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
-}
+};
 
 console.log(abTest(2, 2));
 
@@ -141,7 +141,7 @@ console.log(abTest(2, 2));
 // Practice this well!! and Understand!!
 let count = 0;
 
-function cc(card) {
+var cc = (card) => {
   // Only change code below this line
   var regex = /[JQKA]/; // This is a Regular Expression (RE)
   if (card > 1 && card < 7) {
@@ -155,7 +155,7 @@ function cc(card) {
   
   return "Change Me";
   // Only change code above this line
-}
+};
 
 console.log(cc("J"));
 cc(3); cc(7); cc('K'); cc('A');
@@ -217,7 +217,7 @@ console.log(mDog);
 
 
 // Using Objects for Lookups
-function phoneticLookup(val) {
+var phoneticLookup = (val) => {
   let result = "";
 
   // Only change code below this line
@@ -239,14 +239,14 @@ console.log(phoneticLookup("alpha"));
 
 // Testing Objects for Properties
 
-function checkObj(obj, checkProp) {
+var checkObj = (obj, checkProp) => {
   // Only change code below this line
   if (obj.hasOwnProperty(checkProp)) {
     return obj[checkProp];
   } else {
     return "Not Found";
   }
-}
+};
 
 // Manipulating Complex Objects
 
@@ -339,7 +339,7 @@ const recordCollection = {
 };
 
 // Only change code below this line
-function updateRecords(records, id, prop, value) {
+var updateRecords = (records, id, prop, value) => {
   const album = records[id];
   // Update the album
   if (value === "") {
@@ -364,7 +364,7 @@ for (let i = 0; i < arr.length; i++) {
   for (let j = 0; j < arr[i].length; j++) {
     console.log(arr[i][j]);
   }
-}
+};
 
 
 // Iterate with Do...While Loops
@@ -378,20 +378,16 @@ let i = 10;
 do {
   mArray.push(i);
   i++;
-} while (i <= 20)
+} while (i <= 20);
 
-
-console.log(mArray)
+console.log(mArray);
 
 // The main difference between a do...while loop and a while loop is that 
 // a do...while loop guarantees that the code inside the loop will be executed at least once, even if the condition is false initially.
 
-
-
-
 var rand = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
+};
 
 var op = rand(1, 10);
 console.log(op);
