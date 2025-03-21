@@ -3,18 +3,17 @@
 The first type of loop we will learn is called a while loop because 
 it runs while a specified condition is true and stops once that condition is no longer true. */
 
-const myArray = [];
+const array = [];
 
 // Initialization
-let i = 5;
+let i = 10;
 
 // Finalization
-while (i >= 0) {
-    myArray.push(i);
-    i--;
+while(i >= 0){
+    array.push(i)
 }
 
-console.log(myArray);
+console.log(array);
 
 // for loop
 const arr = [];
