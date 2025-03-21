@@ -10,7 +10,8 @@ let i = 10;
 
 // Finalization
 while(i >= 0){
-    array.push(i)
+    array.push(i);
+    i++;
 }
 
 console.log(array);
@@ -61,10 +62,10 @@ const contacts = [
       likes: ["Hogwarts", "Magic", "Hagrid"],
     },
     {
-      firstName: "Sherlock",
-      lastName: "Holmes",
+      firstName: "Sherlock Holmes",
+      lastName: "Holmes My Son",
       number: "0487345643",
-      likes: ["Intriguing Cases", "Violin"],
+      likes: ["Intriguing Cases", "Bad Boys For Life", "Violin"],
     },
     {
       firstName: "Kristian",
